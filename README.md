@@ -1,4 +1,4 @@
-### Guide: 
+## Guide: 
 
 This service uses Prisma ORM for postgress DB. 
 
@@ -16,3 +16,37 @@ This service uses Prisma ORM for postgress DB.
 * user sign-up: should throw Error cos we use same email
 * log-in: success 
 * log-in: should fail cos of wrong credentials
+
+## Endpoints:
+
+### POST /sign-up
+
+```json
+{
+    "name": "Sample Two",
+    "email": "sample2@mail.com",
+    "password": "password123",
+    "profileImage": "https://example.com/1"
+}
+```
+
+
+### POST  /log-in
+
+```json
+{
+    "email": "sample2@mail.com",
+    "password": "password123"
+}
+```
+
+
+### GET  /profile-image
+```json
+
+  headers: 
+    
+      "token": eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjYsImVtYWlsIjoic2FtcGxlMkBtYWlsLmNvbSIsImlhdCI6MTY3NzAwNzgxM30.DKDpML1jytnJYadd_oUdB_w1MDRi7UIRXS4x8TTczZU
+    
+
+```
