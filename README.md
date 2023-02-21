@@ -8,3 +8,11 @@ This service uses Prisma ORM for postgress DB.
 * Run `npx prisma migrate deploy`. Prisma will check DB scheme and will apply all needed migrations. 
 * Run `npm run start:dev` for start 
 * Run `npm test` for tests
+
+## Test cases: 
+✓ should return "Hello World!"
+✓ user sign-up - success 
+✓ try to get profile image 
+✓ user sign-up: should throw Error cos we use same email
+✓ log-in: success 
+✓ log-in: should fail cos of wrong credentials
