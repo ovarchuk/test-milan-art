@@ -1,0 +1,26 @@
+###
+POST http://localhost:3000/sign-up
+Content-Type: application/json
+
+{
+    "name": "Sample Two",
+    "email": "sample2@mail.com",
+    "password": "password123",
+    "profileImage": "https://example.com/1"
+}
+
+
+###
+POST  http://localhost:3000/log-in
+Content-Type: application/json
+
+{
+    "email": "sample2@mail.com",
+    "password": "password123"
+}
+
+
+###
+GET  http://localhost:3000/profile-image
+Content-Type: application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjYsImVtYWlsIjoic2FtcGxlMkBtYWlsLmNvbSIsImlhdCI6MTY3NzAwNzgxM30.DKDpML1jytnJYadd_oUdB_w1MDRi7UIRXS4x8TTczZU
